@@ -1,0 +1,186 @@
+{
+	"info": {
+		"_postman_id": "a4414098-22ca-4371-8ca0-b307e87d0141",
+		"name": "Academix",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18239688"
+	},
+	"item": [
+		{
+			"name": "Health",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/academix/health",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"academix",
+						"health"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"Sandra Milena\",\r\n    \"documentType\" : \"CC\",\r\n    \"documentNumber\" : \"15465165165\",\r\n    \"age\" : \"40\",\r\n    \"email\" : \"Milena@gmail.com\",\r\n    \"password\" : \"Sandra1994*\",\r\n    \"rol\" : \"USER\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/academix/user",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"academix",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar User",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"Walther Zapata\",\r\n    \"documentType\" : \"CC\",\r\n    \"documentNumber\" : \"5555555555\",\r\n    \"age\" : \"30\",\r\n    \"email\" : \"wart@gmail.com\",\r\n    \"password\" : \"Walterzc1994*\",\r\n    \"rol\" : \"USER\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/academix/user/54133e25-8207-4746-ad8e-ec6831b531a5",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"academix",
+						"user",
+						"54133e25-8207-4746-ad8e-ec6831b531a5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Users",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "user-admin",
+						"value": "admin123456789",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/api/v1/academix/users",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"academix",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete User",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/academix/user/54133e25-8207-4746-ad8e-ec6831b531a5",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"academix",
+						"user",
+						"54133e25-8207-4746-ad8e-ec6831b531a5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Swagger Docs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/academix/doc/api-docs",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"academix",
+						"doc",
+						"api-docs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Swagger html",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/academix/doc/swagger-ui/index.html",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"academix",
+						"doc",
+						"swagger-ui",
+						"index.html"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
