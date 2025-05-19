@@ -159,7 +159,7 @@ Puedes probar todos los endpoints directamente desde Swagger o usando herramient
     └── driven-adapters
     ├   └── dynamodb
     └── helpers
----
+```
 
 ## 🛡️ Seguridad
 
