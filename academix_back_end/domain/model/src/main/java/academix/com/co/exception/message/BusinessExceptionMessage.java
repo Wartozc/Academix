@@ -1,4 +1,4 @@
-﻿package academix.com.co.exception.message;
+package academix.com.co.exception.message;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;

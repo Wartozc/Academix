@@ -1,4 +1,4 @@
-﻿package academix.com.co;
+package academix.com.co;
 
 
 import academix.com.co.config.UserRouterConfig;

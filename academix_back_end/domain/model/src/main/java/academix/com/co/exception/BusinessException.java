@@ -1,4 +1,4 @@
-﻿package academix.com.co.exception;
+package academix.com.co.exception;
 
 import academix.com.co.exception.message.BusinessExceptionMessage;
 

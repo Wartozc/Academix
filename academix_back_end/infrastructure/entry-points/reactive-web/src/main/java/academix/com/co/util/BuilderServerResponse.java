@@ -1,4 +1,4 @@
-﻿package academix.com.co.util;
+package academix.com.co.util;
 
 import academix.com.co.user.User;
 import lombok.experimental.UtilityClass;

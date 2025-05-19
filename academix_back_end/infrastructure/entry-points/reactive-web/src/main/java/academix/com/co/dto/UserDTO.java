@@ -1,4 +1,4 @@
-﻿package academix.com.co.dto;
+package academix.com.co.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

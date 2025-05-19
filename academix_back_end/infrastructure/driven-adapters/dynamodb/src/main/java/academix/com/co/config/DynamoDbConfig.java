@@ -1,4 +1,4 @@
-﻿package academix.com.co.config;
+package academix.com.co.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

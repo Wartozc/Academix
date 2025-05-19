@@ -1,10 +1,10 @@
-﻿package academix.com.co;
+package academix.com.co;
 
 
-import academix.com.co.creator.CreatorUseCase;
-import academix.com.co.deleter.DeleterUseCase;
-import academix.com.co.lister.ListerUseCase;
-import academix.com.co.updater.UpdaterUseCase;
+import academix.com.co.usecase.creator.CreatorUseCase;
+import academix.com.co.usecase.deleter.DeleterUseCase;
+import academix.com.co.usecase.lister.ListerUseCase;
+import academix.com.co.usecase.updater.UpdaterUseCase;
 import academix.com.co.util.BuilderServerRequest;
 import academix.com.co.util.BuilderServerResponse;
 import lombok.RequiredArgsConstructor;

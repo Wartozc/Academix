@@ -1,18 +1,19 @@
-﻿package academix.com.co.deleter;
+package academix.com.co.usecase.updater;
 
 import academix.com.co.exception.BusinessException;
 import academix.com.co.exception.message.BusinessExceptionMessage;
+import academix.com.co.user.User;
 import academix.com.co.user.gateways.UserRepository;
 import lombok.RequiredArgsConstructor;
 import reactor.core.publisher.Mono;
 
 @RequiredArgsConstructor
-public class DeleterUseCase {
+public class UpdaterUseCase {
     private final UserRepository userRepository;
 
-    public Mono<Boolean> deleteUser(String userId){
-        return userRepository.deleteUser(userId)
+    public Mono<User> updateUser(User user){
+        return userRepository.updateUser(user)
                 .onErrorResume(error -> Mono.defer(()->
-                        Mono.error(new BusinessException(BusinessExceptionMessage.CAN_NOT_DELETE_USER))));
+                        Mono.error(new BusinessException(BusinessExceptionMessage.CAN_NOT_UPDATE_USER))));
     }
 }

@@ -1,4 +1,4 @@
-﻿package academix.com.co.config;
+package academix.com.co.config;
 
 import lombok.Getter;
 import lombok.Setter;

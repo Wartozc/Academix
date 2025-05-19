@@ -1,8 +1,20 @@
-﻿package academix.com.co.user;
+package academix.com.co.user;
 
-import lombok.Builder;
 
+import lombok.*;
+
+@AllArgsConstructor
+@Setter
+@Getter
+@NoArgsConstructor
 @Builder(toBuilder = true)
-public record User(String id,String name, String documentType, String documentNumber, String age,
-                   String email, String password, Rol rol) {
+public class User {
+    private String id;
+    private String name;
+    private String documentType;
+    private String documentNumber;
+    private String age;
+    private String email;
+    private String password;
+    private Rol rol;
 }

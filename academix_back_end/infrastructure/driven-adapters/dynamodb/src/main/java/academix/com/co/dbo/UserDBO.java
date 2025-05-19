@@ -1,9 +1,6 @@
-﻿package academix.com.co.dbo;
+package academix.com.co.dbo;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 import software.amazon.awssdk.enhanced.dynamodb.mapper.annotations.DynamoDbBean;
 import software.amazon.awssdk.enhanced.dynamodb.mapper.annotations.DynamoDbPartitionKey;
 import software.amazon.awssdk.enhanced.dynamodb.mapper.annotations.DynamoDbSortKey;
@@ -26,12 +23,12 @@ public class UserDBO {
     private String adminId;
 
     @DynamoDbPartitionKey
-    public String getSuperUser() {
+    public String getAdminId() {
         return adminId;
     }
 
     @DynamoDbSortKey
-    public String getUserId() {
+    public String getId() {
         return id;
     }
 }

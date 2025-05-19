@@ -1,4 +1,4 @@
-﻿package academix.com.co;
+package academix.com.co;
 
 import academix.com.co.dbo.UserDBO;
 import academix.com.co.user.User;
@@ -73,8 +73,12 @@ public class DynamoDbAdapter implements UserRepository {
 
     private QueryEnhancedRequest getQuery(String partitionKey) {
         return QueryEnhancedRequest.builder()
-                .queryConditional(QueryConditional.sortGreaterThan(Key.builder()
-                        .partitionValue(partitionKey).sortValue("\u0000").build()))
-                .build();
+                .queryConditional(
+                        QueryConditional.sortGreaterThan(Key.builder()
+                                .partitionValue(partitionKey)
+                                .sortValue("\u0000")
+                                .build())).build();
     }
+
+
 }

@@ -1,4 +1,4 @@
-﻿package academix.com.co.user.gateways;
+package academix.com.co.user.gateways;
 
 import academix.com.co.user.User;
 import reactor.core.publisher.Flux;
