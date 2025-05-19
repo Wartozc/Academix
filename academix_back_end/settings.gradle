@@ -1,0 +1,16 @@
+rootProject.name = 'academix_back_end'
+
+include(':web-application')
+include ':usecase'
+include ':model'
+include ':reactive-web'
+include ':dynamodb'
+include ':exception'
+
+project(':web-application').projectDir = file('./application/web-application')
+project(':usecase').projectDir = file('./domain/usecase')
+project(':model').projectDir = file('./domain/model')
+project(':reactive-web').projectDir = file('./infrastructure/entry-points/reactive-web')
+project(':dynamodb').projectDir = file('./infrastructure/driven-adapters/dynamodb')
+project(':exception').projectDir = file('./infrastructure/helpers/exception')
+

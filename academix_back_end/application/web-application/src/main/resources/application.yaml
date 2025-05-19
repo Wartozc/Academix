@@ -1,0 +1,40 @@
+﻿server:
+  port: ${SERVER_PORT:8080}
+
+spring:
+  application:
+    name: ${APP_NAME:Academix}
+  web-flux:
+    base-path: ${BASE_PATH:api/v1/academix}
+  profiles:
+    include: ${ENV:local}
+
+logging:
+  level:
+    root: ${LOG_LEVEL:info}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
+      base-path: /
+
+springdoc:
+  swagger-ui:
+    path: "/doc/swagger-ui/index.html"
+  api-docs:
+    path: "doc/api-docs"
+
+app:
+  adapters:
+    dynamodb:
+      table-name: ${USER_TABLE:users}
+      admin-id: ${USER_TABLE:admin123456789}
+
+user-router:
+  routes:
+    create: "/user"
+    update: "/user/{id}"
+    delete: "/user/{id}"
+    list: "/users"
