@@ -199,12 +199,6 @@ Puedes descargar la colección de postMan para probar el servicio en local:
 
 [📥 Descargar Academix.postman_collection.json](./Academix.postman_collection.json)
 
-## 👨‍💻 Autor
-
-Este backend fue desarrollado como parte de un sistema modular con enfoque reactivo y arquitectura limpia.
-Estudiantes de ingeniería de software de la corporación universitaria Ibero Americana
-
-
 
 # 🎨 Academix FRONTEND
 
@@ -275,3 +269,9 @@ src
 - Soporte i18n
 - Modo oscuro
 - Pruebas automatizadas
+
+
+## 👨‍💻 Autor
+
+Este backend fue desarrollado como parte de un sistema modular con enfoque reactivo y arquitectura limpia.
+Estudiantes de ingeniería de software de la corporación universitaria Ibero Americana
