@@ -177,10 +177,6 @@ Actualmente no hay autenticación OAuth2 ni JWT. La autorización se hace por he
 
 ---
 
-## 👨‍💻 Autor
-
-Este backend fue desarrollado como parte de un sistema modular con enfoque reactivo y arquitectura limpia.
-
 ### 📄 Documentación OpenAPI
 
 Puedes descargar el archivo Swagger aquí:
@@ -203,5 +199,8 @@ Puedes descargar la colección de postMan para probar el servicio en local:
 
 [📥 Descargar Academix.postman_collection.json](./Academix.postman_collection.json)
 
+## 👨‍💻 Autor
+
+Este backend fue desarrollado como parte de un sistema modular con enfoque reactivo y arquitectura limpia.
 
 # Academix FRONTEND
