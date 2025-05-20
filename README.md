@@ -202,6 +202,7 @@ Puedes descargar la colección de postMan para probar el servicio en local:
 ## 👨‍💻 Autor
 
 Este backend fue desarrollado como parte de un sistema modular con enfoque reactivo y arquitectura limpia.
+Estudiantes de ingeniería de software de la corporación universitaria Ibero Americana
 
 
 
@@ -256,21 +257,21 @@ src
 
 ## Seguridad
 
-    - Protección de rutas con AuthGuard
-    - Headers personalizados como user-admin o document-number
-    - Validación de acceso según rol
+- Protección de rutas con AuthGuard
+- Headers personalizados como user-admin o document-number
+- Validación de acceso según rol
 
 ## Pruebas sugeridas
 
-    - Unitarias: Karma + Jasmine
-    - End-to-End: Cypress o Playwright
-    - Angular Testing Harness
+- Unitarias: Karma + Jasmine
+- End-to-End: Cypress o Playwright
+- Angular Testing Harness
 
 ## Mejoras futuras
 
-    - Autenticación con JWT
-    - Persistencia de sesión
-    - Paginación y filtros
-    - Soporte i18n
-    - Modo oscuro
-    - Pruebas automatizadas
+- Autenticación con JWT
+- Persistencia de sesión
+- Paginación y filtros
+- Soporte i18n
+- Modo oscuro
+- Pruebas automatizadas
