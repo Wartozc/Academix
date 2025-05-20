@@ -203,7 +203,7 @@ Puedes descargar la colección de postMan para probar el servicio en local:
 
 Este backend fue desarrollado como parte de un sistema modular con enfoque reactivo y arquitectura limpia.
 
-# Academix FRONTEND
+
 
 # 🎨 Academix FRONTEND
 
@@ -252,6 +252,7 @@ src
 │   └── app.config.ts
 ├── assets
 └── environments
+```
 
 ## Seguridad
 
@@ -259,13 +260,13 @@ src
     - Headers personalizados como user-admin o document-number
     - Validación de acceso según rol
 
-##🧪 Pruebas sugeridas
+## Pruebas sugeridas
 
     - Unitarias: Karma + Jasmine
     - End-to-End: Cypress o Playwright
     - Angular Testing Harness
 
-##🔧 Mejoras futuras
+## Mejoras futuras
 
     - Autenticación con JWT
     - Persistencia de sesión
