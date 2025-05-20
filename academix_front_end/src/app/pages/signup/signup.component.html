@@ -1,0 +1,44 @@
+<div>
+    <h1>Registrarse</h1>
+    @if ( autfFail) {
+    <section>
+        <p>Las contraseñas no coinciden, por favor valide</p>
+    </section>
+    }
+    <form [formGroup]="formUser" (ngSubmit)="signUp()">
+        <div class="top-row">
+            <div class="field-wrap">
+                <label>Nombre Completo<span class="req">*</span></label>
+                <input type="text" required autocomplete="off" formControlName="nombre" />
+            </div>
+
+            <div class="field-wrap">
+                <label>Tipo de documento<span class="req">*</span></label>
+                <input type="text" required autocomplete="off" formControlName="tipoDoc" />
+            </div>
+
+            <div class="field-wrap">
+                <label>Número de documento<span class="req">*</span></label>
+                <input type="text" required autocomplete="off" formControlName="numeroDoc" />
+            </div>
+        </div>
+
+        <div class="field-wrap">
+            <label>Correo eléctronico<span class="req">*</span></label>
+            <input type="email" required autocomplete="off" formControlName="correo" />
+        </div>
+
+        <div class="field-wrap">
+            <label>Asignar contraseña<span class="req">*</span></label>
+            <input type="password" required autocomplete="off" formControlName="contrasena" />
+        </div>
+
+        <div class="field-wrap">
+            <label>confirmar contraseña<span class="req">*</span></label>
+            <input type="password" required autocomplete="off" formControlName="contrasena2" />
+        </div>
+
+        <button type="submit" class="button button-block" (click)="signUp()">Registrarse</button>
+    </form>
+
+</div>

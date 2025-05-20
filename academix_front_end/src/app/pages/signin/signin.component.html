@@ -1,0 +1,25 @@
+<div>
+    <h1>Bienvenido</h1>
+    <form [formGroup]="formAutentication">
+        <div class=" field-wrap ">
+            <label>Correo eléctronico<span class="req ">*</span></label>
+            <input type="email" required autocomplete="off " formControlName="correo" />
+        </div>
+
+        <div class="field-wrap ">
+            <label>Contraseña<span class="req ">*</span></label>
+            <input type="password" required autocomplete="off " formControlName="contrasena" />
+        </div>
+
+        <p class="forgot ">
+            <a (click)="forget() ">¿Olvidó la contraseña?</a>
+        </p>
+
+        <button class="button button-block " (click)="signIn() ">Ingresar</button>
+    </form>
+</div>
+@if ( autfFail) {
+<section>
+    <p>Usuario/contraseña inválido</p>
+</section>
+}
