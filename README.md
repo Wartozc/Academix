@@ -204,3 +204,72 @@ Puedes descargar la colección de postMan para probar el servicio en local:
 Este backend fue desarrollado como parte de un sistema modular con enfoque reactivo y arquitectura limpia.
 
 # Academix FRONTEND
+
+# 🎨 Academix FRONTEND
+
+El frontend de **Academix** es una SPA construida con **Angular 18**, diseñada para ser moderna, reactiva y fácil de usar.
+
+## 🌐 URL de despliegue
+
+🔗 [https://academix-ibero.netlify.app/#/login](https://academix-ibero.netlify.app/#/login)
+
+## 🚀 Tecnologías
+
+- Angular 18
+- Angular Signals
+- Angular Router
+- Angular Hooks
+- RxJS
+- TypeScript
+- SCSS
+- Angular Forms
+- Netlify
+- Angular Standalone Components
+- Servicios y Guards
+
+## 📦 Funcionalidades principales
+
+- Inicio de sesión con validación
+- Registro, edición y eliminación de usuarios
+- Listado de usuarios protegido
+- `AuthGuards` para rutas
+- State management con **signals**
+- Hooks personalizados
+- UI responsiva
+
+## 📁 Estructura del proyecto
+
+```bash
+src
+├── app
+│   ├── auth
+│   ├── core
+│   ├── shared
+│   ├── services
+│   ├── guards
+│   ├── hooks
+│   ├── features
+│   └── app.config.ts
+├── assets
+└── environments
+
+## Seguridad
+
+    - Protección de rutas con AuthGuard
+    - Headers personalizados como user-admin o document-number
+    - Validación de acceso según rol
+
+##🧪 Pruebas sugeridas
+
+    - Unitarias: Karma + Jasmine
+    - End-to-End: Cypress o Playwright
+    - Angular Testing Harness
+
+##🔧 Mejoras futuras
+
+    - Autenticación con JWT
+    - Persistencia de sesión
+    - Paginación y filtros
+    - Soporte i18n
+    - Modo oscuro
+    - Pruebas automatizadas
